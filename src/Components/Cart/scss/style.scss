@@ -1,0 +1,49 @@
+.cart {
+	background: #81d4fa;
+	border-radius: 5px;
+	width: 35%;
+	margin: 1rem;
+	padding: 0 1rem;
+
+	.cart-header {
+		margin-bottom: 3rem;
+		h1 {
+			text-transform: capitalize;
+			margin-bottom: 6px;
+		}
+
+		.underline {
+			width: 100px;
+			height: 4px;
+			border-radius: 4px;
+			background: #03a9f4;
+		}
+	}
+
+	.total {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 3rem;
+		border-top: 1px solid black;
+
+		h3 {
+			font-size: 2rem;
+			text-transform: capitalize;
+		}
+
+		button {
+			background: #03a9f4;
+			color: black;
+			border: 1px solid #03a9f4;
+			padding: 0.5rem 1.5rem;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 0.5s ease-in-out;
+			font-size: 1.2rem;
+
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+}

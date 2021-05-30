@@ -1,0 +1,23 @@
+.products {
+	margin: 1rem;
+
+	.products-header {
+		margin-bottom: 3rem;
+
+		h1 {
+			text-transform: capitalize;
+			margin-bottom: 6px;
+		}
+
+		.underline {
+			width: 100px;
+			height: 4px;
+			border-radius: 4px;
+			background: #03a9f4;
+		}
+	}
+}
+.products-container {
+	display: flex;
+	justify-content: space-between;
+}

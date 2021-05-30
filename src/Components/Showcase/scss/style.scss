@@ -1,0 +1,118 @@
+.showcase {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	margin-bottom: 9rem;
+	background-image: url("../../../images/girlLookingAtGrandCanion.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&::before {
+		content: "";
+		position: absolute;
+		background: rgba(0, 0, 0, 0.4);
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.content {
+		z-index: 1;
+		text-align: center;
+		margin-bottom: 3rem;
+		width: 90%;
+		margin: 0 auto;
+
+		h1 {
+			font-size: clamp(5rem, 6vw, 8rem);
+			text-transform: capitalize;
+			text-shadow: 3px 3px 5px black;
+			color: #e1f5fe;
+			opacity: 0;
+			margin-bottom: 3rem;
+			animation: bounceIn 1.5s 1.8s forwards;
+
+			@keyframes tada {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		}
+
+		.continue {
+			width: 17rem;
+			transform: scale(1.1);
+			padding: 1rem 0;
+			background: e1f5fe;
+			border: 3px solid #e1f5fe;
+			font-size: 2rem;
+			border-radius: 50px;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: all 0.5s ease;
+			animation: zoomInUp 1.8s forwards;
+
+			&:hover {
+				background-color: #b2ebf2;
+				border: 3px solid #b2ebf2;
+			}
+
+			@media (max-width: 867px) {
+				transform: scale(1);
+			}
+		}
+
+		.scroll-to-bottom {
+			border: 2px solid white;
+			width: 20px;
+			position: absolute;
+			background: transparent;
+			border-radius: 10px;
+			color: transparent;
+			height: 40px;
+			bottom: 1.5rem;
+			left: 50%;
+			opacity: 0;
+			transform: translateY(9rem);
+			cursor: pointer;
+			animation: slideInUp 0.3s 2s forwards;
+
+			@keyframes slideInUp {
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				width: 90%;
+				border-radius: 10px;
+				background-color: white;
+				height: 20px;
+				top: 2px;
+				left: 1px;
+				animation: move 1s ease-in-out infinite alternate;
+			}
+
+			@keyframes move {
+				0% {
+					top: 2px;
+				}
+				100% {
+					top: 15px;
+				}
+			}
+		}
+	}
+}

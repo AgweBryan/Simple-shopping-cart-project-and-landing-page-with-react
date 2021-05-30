@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	letter-spacing: 0.1rem;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #e0f2f1;
+	color: #010d16;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.col-2 {
+	width: 60%;
+}
+
+.col-1 {
+	width: 35%;
+}

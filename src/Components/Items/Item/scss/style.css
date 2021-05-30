@@ -1,0 +1,36 @@
+.product {
+  width: 30%;
+  text-align: center;
+}
+.product .product-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.product .product-name {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.product .product-desc {
+  font-size: 1.3rem;
+}
+.product .product-price {
+  font-size: 1.5rem;
+}
+.product .add {
+  width: 100%;
+  background: #03a9f4;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  text-transform: capitalize;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.product .add:hover {
+  background: #b3e5fc;
+  color: black;
+}
